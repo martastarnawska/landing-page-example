@@ -1,0 +1,24 @@
+$screen-sizes: (
+  'sm': 480px,
+  'md': 786px,
+  'lg': 1170px
+);
+
+@function media-min-width($screen-sizes-name) {
+  @return ('only screen and (min-width: #{map-get($screen-sizes, $screen-sizes-name)})');
+}
+
+$screen-sm: media-min-width('sm');
+$screen-md: media-min-width('md');
+$screen-lg: media-min-width('lg');
+
+$container-gutter: 15px;
+
+%container {
+  display: block;
+  width: 100%;
+  max-width: map-get($screen-sizes, 'lg');
+  margin: 0 auto;
+  padding-right: $container-gutter;
+  padding-left: $container-gutter;
+}

@@ -1,0 +1,8 @@
+.jumbo {
+  padding: 20px 0;
+  background-color: blue;
+
+  &__container {
+    @extend %container;
+  }
+}

@@ -1,0 +1,25 @@
+.section {
+  $spacing: 50px;
+
+  padding: $spacing 0;
+
+  &__container {
+    @extend %container;
+  }
+
+  &__title {
+    font-size: 2rem;
+  }
+
+  &--dark {
+    background-color: rgba(gray, .2);
+  }
+
+  @media #{$screen-md} {
+    padding: ($spacing * 2) 0;
+
+    &__title {
+      font-size: 4rem;
+    }
+  }
+}

@@ -9,3 +9,30 @@ body {
 *, *::before, *::before {
   box-sizing: border-box;
 }
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+p,
+figure {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+img,
+svg {
+  user-select: none;
+}
+
+button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  
+}
