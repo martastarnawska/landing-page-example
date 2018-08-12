@@ -1,0 +1,17 @@
+.card {
+  padding: 30px 40px;
+  text-align: center;
+
+  &__title {
+    margin-bottom: 0;
+    font-size: 2rem;
+  }
+
+  &__subtitle {
+    margin-bottom: 40px;
+  }
+
+  @media #{$screen-md} {
+    padding: 0 10px;
+  }
+}

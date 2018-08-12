@@ -6,7 +6,9 @@ body {
   padding: 0;
 }
 
-*, *::before, *::before {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -32,7 +34,6 @@ svg {
 
 button {
   padding: 0;
-  border: none;
   background-color: transparent;
-  
+  border: none;
 }

@@ -2,17 +2,28 @@
   $spacing: 50px;
 
   padding: $spacing 0;
+  font-family: $font-main;
+  font-size: 16px;
+  color: $c-text-gray;
 
   &__container {
     @extend %container;
+
+    display: flex;
+    flex-direction: column;
+
+    @media #{$screen-md} {
+      flex-direction: row;
+      justify-content: space-around;
+    }
   }
 
   &__title {
-    font-size: 2rem;
+    font-size: 28px;
   }
 
   &--dark {
-    background-color: rgba(gray, .2);
+    background-color: $c-white-smoke;
   }
 
   @media #{$screen-md} {
