@@ -1,1 +1,7 @@
 $font-main : 'Fira Sans', sans-serif;
+$font-price : 'Lato', sans-serif;
+
+%dollar {
+  font-family: $font-price;
+  font-size: 28px;
+}

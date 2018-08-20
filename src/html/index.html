@@ -4,6 +4,7 @@
   <meta charset="utf-8" >
   <meta name="viewport" content="width=device-width, initial-scale=1.0" >
   <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css" >
   <title>Landing page example</title>
@@ -27,7 +28,7 @@
 
 <!-- card section  -->
     <section class="section">
-      <div class="section__container">
+      <div class="section__container section__container--cards">
 
         <!-- Cards -->
         <section class="card">
@@ -55,7 +56,6 @@
           <p class="card__contents">Sed risus feugiat fusce eu sit conubia venenatis aliquet nisl cras eu adipiscing ac cras at sem cras per senectus eu parturient quam.</p>
         </section>
 
-
       </div>
     </section>
 
@@ -65,9 +65,72 @@
       </div>
     </section>
 
+<!-- Tiles section -->
     <section class="section section--dark">
       <div class="section__container">
-        hello
+        <h2 class="section__title">Manage your subscriptions</h2>
+
+        <div class="section__tilewrapper">
+          <!-- First tile -->
+          <section class="tile">
+            <div class="tile__heading">
+              <h3 class="tile__title">PERSONAL</h3>
+            </div>
+            <div class="tile__content">
+              <p class="tile__subtitle">Sed risus feugiat fusce eu sit conubia venenatis aliquet nisl cras.</p>
+              <p class="tile__info">
+                <span class="tile__dollar">$</span>
+                <span class="tile__price">19</span>
+                <span class="tile__month">/MONTH</span>
+              </p>
+              <p class="tile__line">Sed risus feugiat</p>
+              <p class="tile__line">Sed risus feugiat fusce eu sit</p>
+              <p class="tile__line">Sed risus feugiat fusce</p>
+              <button class="button">GET STARTED</button>
+            </div>
+          </section>
+
+          <!-- Second Tile -->
+          <section class="tile tile--purple">
+            <div class="tile__heading">
+              <h3 class="tile__title">PROFESSIONAL</h3>
+            </div>
+            <div class="tile__content">
+              <p class="tile__subtitle">Sed risus feugiat fusce eu sit conubia venenatis aliquet nisl cras.</p>
+              <p class="tile__info">
+                <span class="tile__dollar">$</span>
+                <span class="tile__price">49</span>
+                <span class="tile__month">/MONTH</span>
+              </p>
+              <p class="tile__line">Sed risus feugiat</p>
+              <p class="tile__line">Sed risus feugiat fusce eu sit</p>
+              <p class="tile__line">Sed risus feugiat fusce</p>
+              <p class="tile__line">Sed risus feugiat</p>
+              <button class="button">GET STARTED</button>
+            </div>
+          </section>
+
+          <!-- Third tile -->
+          <section class="tile">
+            <div class="tile__heading">
+              <h3 class="tile__title">ENTERPRISE</h3>
+            </div>
+            <div class="tile__content">
+              <p class="tile__subtitle">Sed risus feugiat fusce eu sit conubia venenatis aliquet nisl cras.</p>
+              <p class="tile__info">
+                <span class="tile__dollar">$</span>
+                <span class="tile__price">99</span>
+                <span class="tile__month">/MONTH</span>
+              </p>
+              <p class="tile__line">Sed risus feugiat</p>
+              <p class="tile__line">Sed risus feugiat fusce eu sit</p>
+              <p class="tile__line">Sed risus feugiat fusce</p>
+              <button class="button">GET STARTED</button>
+            </div>
+          </section>
+
+        </div>
+
       </div>
     </section>
 

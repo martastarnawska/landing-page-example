@@ -22,3 +22,14 @@ $container-gutter: 15px;
   padding-right: $container-gutter;
   padding-left: $container-gutter;
 }
+
+%cards-layout {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  @media #{$screen-md} {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}

@@ -1,0 +1,81 @@
+.tile {
+  $spacing: 30px;
+
+  margin-bottom: 40px;
+  padding-bottom: 30px;
+  line-height: 1.8;
+  background-color: $c-white;
+  border: 1px solid $c-tile-heading-background;
+  border-radius: 5px;
+
+  &__heading {
+    background-color: $c-tile-heading-background;
+  }
+
+  &__title {
+    margin-top: -1px;
+    padding: 1em 0;
+    font-size: 13px;
+    font-weight: normal;
+  }
+
+  &__content {
+    padding: ($spacing / 2) $spacing;
+  }
+
+  &__info {
+    @extend %dollar;
+  }
+
+  &__info::after {
+    @extend %underscore;
+
+    margin-top: -15px;
+  }
+
+  &__dollar {
+    vertical-align: 15px;
+  }
+
+  &__price {
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+  &__month {
+    font-size: .5em;
+    line-height: 1em;
+    color: $c-text-lightgray;
+  }
+
+  &__line {
+    line-height: 2.5em;
+  }
+
+  p:nth-of-type(3) {
+    margin-top: 17px;
+  }
+
+  &__line:not(:last-of-type)::after {
+    @extend %underscore;
+  }
+
+  &__line:last-of-type {
+    margin-bottom: 40px;
+  }
+
+  &--purple {
+    border: 2px solid $c-purple;
+
+    .tile__heading {
+      color: $c-white;
+      background-color: $c-purple;
+    }
+  }
+
+  @media #{$screen-md} {
+    &:not(.tile--purple) {
+      align-self: flex-start;
+    }
+  }
+}

@@ -9,17 +9,19 @@
   &__container {
     @extend %container;
 
-    display: flex;
-    flex-direction: column;
-
-    @media #{$screen-md} {
-      flex-direction: row;
-      justify-content: space-around;
+    &--cards {
+      @extend %cards-layout;
     }
   }
 
+  &__tilewrapper {
+    @extend %cards-layout;
+  }
+
   &__title {
-    font-size: 28px;
+    font-size: 1.6em;
+    font-weight: normal;
+    text-align: center;
   }
 
   &--dark {
@@ -28,9 +30,5 @@
 
   @media #{$screen-md} {
     padding: ($spacing * 2) 0;
-
-    &__title {
-      font-size: 4rem;
-    }
   }
 }
