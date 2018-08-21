@@ -1,0 +1,17 @@
+.button {
+  padding: 22px 70px;
+  color: $c-purple-button;
+  border: 2px solid $c-purple-button;
+  border-radius: 40px;
+
+  &--transparent {
+    color: $c-white;
+    border-color: $c-white;
+  }
+
+  &--purple {
+    color: $c-white;
+    background-color: $c-purple-button;
+    border: none;
+  }
+}
