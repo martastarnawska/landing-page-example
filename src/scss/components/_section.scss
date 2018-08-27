@@ -8,14 +8,17 @@
 
   &__container {
     @extend %container;
-
-    &--cards {
-      @extend %cards-layout;
-    }
   }
 
-  &__tilewrapper {
-    @extend %cards-layout;
+  &__flexlist {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    @media #{$screen-md} {
+      flex-direction: row;
+      justify-content: space-around;
+    }
   }
 
   &__title {

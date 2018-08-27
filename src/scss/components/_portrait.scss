@@ -1,0 +1,18 @@
+.portrait {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border: 2px solid $c-white;
+  border-radius: 100%;
+
+  &__image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+  }
+}

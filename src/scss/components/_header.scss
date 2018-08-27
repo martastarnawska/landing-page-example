@@ -1,8 +1,47 @@
 .jumbo {
+  height: 100vh;
   padding: 20px 0;
-  background-color: rgba(102, 63, 181, 1);
+  font-family: $font-main;
+  color: $c-white;
+  text-align: center;
+  background-image: url('./../assets/img/image-bg-header.jpg');
 
   &__container {
     @extend %container;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+  }
+
+  &__title,
+  &__subtitle {
+    font-weight: normal;
+  }
+
+  &__socialMedia {
+    display: flex;
+  }
+
+  &__mediaInfo {
+    padding: 0 15px;
+  }
+
+  &__mediaInfo + &__mediaInfo {
+    border-left: 1px solid transparentize($c-white, .5);
+  }
+
+  @media #{$screen-md} {
+    &__container {
+      position: relative;
+      justify-content: center;
+    }
+
+    &__socialMedia {
+      position: absolute;
+      bottom: 0;
+    }
   }
 }

@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" >
   <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
   <link rel="stylesheet" href="style.css" >
   <title>Landing page example</title>
@@ -13,9 +14,52 @@
 <body>
   <header class="jumbo">
     <div class="jumbo__container">
-      <h1>Land.io,blissful innovation.</h1>
-      <h2>Craft your journey, absolutely free with Land.io UI kit.</h2>
-      <button class="button button--transparent">FREE FOR SKETCH</button>
+
+      <nav class="navigation">
+        <div class="navigation__container">
+          <a class="" href="logo">
+            <img src="../assets\img\logo.svg">
+          </a>
+
+          <input type="checkbox" id="burger"class="navigation__input"/>
+          <label for="burger" class="navigation__burger">
+            <i class="fas fa-bars fa-2x"></i>
+          </label>
+
+          <ul class="navigation__menu">
+            <li class="navigation__item"><a href="#" class="navigation__link">About Land.io</a></li>
+            <li class="navigation__item"><a href="#" class="navigation__link">How it works</a></li>
+            <li class="navigation__item"><a href="#" class="navigation__link">Support</a></li>
+            <li class="navigation__item"><a href="#" class="navigation__link">Log in</a></li>
+            <li class="portrait">
+              <img class="portrait__image" src="../assets\img\image-person.png">
+            </li>
+
+            <!-- tu dorzucę wszystkie elementy nav lupę itd -->
+          </ul>
+        </div>
+      </nav>
+
+      <h1 class="jumbo__title">Land.io, blissful innovation.</h1>
+      <h2 class="jumbo__subtitle">Craft your journey, absolutely free, with Land.io UI kit.</h2>
+      <button class="button button--transparent">
+        <img class="button__icon" src="../assets\img\icon-sketch.svg">
+        FREE FOR SKETCH
+      </button>
+      <div class="jumbo__socialMedia">
+        <p class="jumbo__mediaInfo">
+          <img class="jumbo__icon" src="../assets/img/icon-twitter.svg">
+          1024
+        </p>
+        <p class="jumbo__mediaInfo ">
+          <img class="jumbo__icon" src="../assets/img/icon-facebook.svg">
+          562
+        </p>
+        <p class="jumbo__mediaInfo">
+          <img class="jumbo__icon" src="../assets/img/icon-linkedin.svg">
+          356
+        </p>
+      </div>
     </div>
   </header>
 
@@ -29,33 +73,34 @@
 <!-- card section  -->
     <section class="section">
       <div class="section__container section__container--cards">
-
-        <!-- Cards -->
-        <section class="card">
-          <div class="card__heading">
-            <img class="card__icon" src="../assets/img/icon-lencil.svg" alt="">
-            <h3 class="card__title">250</h3>
-            <p class="card__subtitle">UI Elements</p>
-          </div>
-          <p class="card__contents">Sed risus feugiat fusce eu sit conubia venenatis aliquet nisl cras eu adipiscing ac cras at sem cras per senectus eu parturient quam.</p>
-        </section>
-
-        <section class="card">
-            <img class="card__icon" src="../assets/img/icon-lightning.svg" alt="">
-            <h3 class="card__title">Ultra</h3>
-            <p class="card__subtitle">Modern design</p>
+        <ul class="section__flexlist">
+          <!-- Cards -->
+          <li class="card">
+            <div class="card__heading">
+              <img class="card__icon" src="../assets/img/icon-lencil.svg" alt="">
+              <h3 class="card__title">250</h3>
+              <p class="card__subtitle">UI Elements</p>
+            </div>
             <p class="card__contents">Sed risus feugiat fusce eu sit conubia venenatis aliquet nisl cras eu adipiscing ac cras at sem cras per senectus eu parturient quam.</p>
-        </section>
+          </li>
 
-        <section class="card">
-          <div class="card__heading">
-            <img class="card__icon" src="../assets/img/icon-heart.svg" alt="">
-            <h3 class="card__title">Free</h3>
-            <p class="card__subtitle">Forever and ever</p>
-          </div>
-          <p class="card__contents">Sed risus feugiat fusce eu sit conubia venenatis aliquet nisl cras eu adipiscing ac cras at sem cras per senectus eu parturient quam.</p>
-        </section>
+          <li class="card">
+              <img class="card__icon" src="../assets/img/icon-lightning.svg" alt="">
+              <h3 class="card__title">Ultra</h3>
+              <p class="card__subtitle">Modern design</p>
+              <p class="card__contents">Sed risus feugiat fusce eu sit conubia venenatis aliquet nisl cras eu adipiscing ac cras at sem cras per senectus eu parturient quam.</p>
+          </li>
 
+          <li class="card">
+            <div class="card__heading">
+              <img class="card__icon" src="../assets/img/icon-heart.svg" alt="">
+              <h3 class="card__title">Free</h3>
+              <p class="card__subtitle">Forever and ever</p>
+            </div>
+            <p class="card__contents">Sed risus feugiat fusce eu sit conubia venenatis aliquet nisl cras eu adipiscing ac cras at sem cras per senectus eu parturient quam.</p>
+          </li>
+
+        </ul>
       </div>
     </section>
 
@@ -70,9 +115,9 @@
       <div class="section__container">
         <h2 class="section__title">Manage your subscriptions</h2>
 
-        <div class="section__tilewrapper">
+        <ul class="section__flexlist">
           <!-- First tile -->
-          <section class="tile">
+          <li class="tile">
             <div class="tile__heading">
               <h3 class="tile__title">PERSONAL</h3>
             </div>
@@ -88,10 +133,10 @@
               <p class="tile__line">Sed risus feugiat fusce</p>
               <button class="button">GET STARTED</button>
             </div>
-          </section>
+          </li>
 
           <!-- Second Tile -->
-          <section class="tile tile--purple">
+          <li class="tile tile--purple">
             <div class="tile__heading">
               <h3 class="tile__title">PROFESSIONAL</h3>
             </div>
@@ -108,10 +153,10 @@
               <p class="tile__line">Sed risus feugiat</p>
               <button class="button button--purple">GET STARTED</button>
             </div>
-          </section>
+          </li>
 
           <!-- Third tile -->
-          <section class="tile">
+          <li class="tile">
             <div class="tile__heading">
               <h3 class="tile__title">ENTERPRISE</h3>
             </div>
@@ -127,9 +172,9 @@
               <p class="tile__line">Sed risus feugiat fusce</p>
               <button class="button">GET STARTED</button>
             </div>
-          </section>
+          </li>
 
-        </div>
+        </ul>
 
       </div>
     </section>
