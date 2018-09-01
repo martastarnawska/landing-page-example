@@ -1,0 +1,23 @@
+.connector {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  &__text {
+    padding: 0 20px;
+  }
+
+  &__imageContainer {
+    padding-top: 30px;
+  }
+
+  @media #{$screen-md} {
+    &__imageContainer {
+      padding-top: 50px;
+    }
+
+    &__image {
+      max-width: 900px;
+    }
+  }
+}

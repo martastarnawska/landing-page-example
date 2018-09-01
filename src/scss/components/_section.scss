@@ -5,6 +5,7 @@
   font-family: $font-main;
   font-size: 16px;
   color: $c-text-gray;
+  text-align: center;
 
   &__container {
     @extend %container;
@@ -14,11 +15,6 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-
-    @media #{$screen-md} {
-      flex-direction: row;
-      justify-content: space-around;
-    }
   }
 
   &__title {
@@ -31,7 +27,49 @@
     background-color: $c-white-smoke;
   }
 
+  &--noPadding {
+    padding-bottom: 0;
+
+    .section__container {
+      padding: 0 0;
+    }
+  }
+
+  &--withBackground {
+    padding: 0 0;
+    color: $c-white;
+
+    .section__container {
+      max-width: 100%;
+      margin: 0 0;
+      padding: 0 0;
+    }
+  }
+
   @media #{$screen-md} {
-    padding: ($spacing * 2) 0;
+    padding: $spacing 0;
+
+    &__flexlist {
+      flex-direction: row;
+      justify-content: space-around;
+      margin-top: 20px;
+      padding-right: 30px;
+      padding-left: 30px;
+    }
+
+    &--noPadding {
+      padding-bottom: 0;
+    }
+
+    &--withBackground {
+      padding: 0 0;
+    }
+  }
+
+  @media #{$screen-lg} {
+    &__flexlist {
+      padding-right: 100px;
+      padding-left: 100px;
+    }
   }
 }

@@ -24,27 +24,25 @@
   }
 
   &__info {
-    @extend %dollar;
-  }
-
-  &__info::after {
-    @extend %underscore;
-
-    margin-top: -15px;
+    margin-bottom: 17px;
+    font-family: $font-price;
+    line-height: 1.4;
+    border-bottom: 1px solid $c-lightgray;
   }
 
   &__dollar {
+    font-size: 28px;
     vertical-align: 15px;
   }
 
   &__price {
-    font-size: 2em;
+    font-size: 54px;
     font-weight: bold;
   }
 
   &__month {
-    font-size: .5em;
-    line-height: 1em;
+    font-size: .8rem;
+    line-height: 2em;
     color: $c-text-lightgray;
   }
 
@@ -52,12 +50,8 @@
     line-height: 2.5em;
   }
 
-  p:nth-of-type(3) {
-    margin-top: 17px;
-  }
-
-  &__line:not(:last-of-type)::after {
-    @extend %underscore;
+  &__line + &__line {
+    border-top: 1px solid $c-lightgray;
   }
 
   &__line:last-of-type {
@@ -74,8 +68,16 @@
   }
 
   @media #{$screen-md} {
-    &:not(.tile--purple) {
+    align-self: center;
+    flex-basis: 32%;
+
+    &--purple {
       align-self: flex-start;
+      flex-basis: 36%;
+
+      .tile__line:last-of-type {
+        margin-bottom: 60px;
+      }
     }
   }
 }

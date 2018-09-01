@@ -40,12 +40,15 @@
         </div>
       </nav>
 
+      <!-- Jumbo content -->
       <h1 class="jumbo__title">Land.io, blissful innovation.</h1>
       <h2 class="jumbo__subtitle">Craft your journey, absolutely free, with Land.io UI kit.</h2>
+
       <button class="button button--transparent">
         <img class="button__icon" src="../assets\img\icon-sketch.svg">
         FREE FOR SKETCH
       </button>
+
       <div class="jumbo__socialMedia">
         <p class="jumbo__mediaInfo">
           <img class="jumbo__icon" src="../assets/img/icon-twitter.svg">
@@ -64,9 +67,21 @@
   </header>
 
   <main>
-    <section class="section section--dark">
+
+    <section class="section section--dark section--noPadding">
       <div class="section__container">
-        <h2 class="section__title">hello</h2>
+
+        <article class="connector">
+          <div class="connector__text">
+            <h2 class="section__title">Build your beautiful UI, the way you want it, with Land.io</h2>
+            <p class="connector__description">Craft memorable, emotive experiences with our range of beautiful UI elements.</p>
+          </div>
+
+          <div class="connector__imageContainer">
+            <img class="connector__image" src="../assets\img\image-tablet-medium.png">
+          </div>
+        </article>
+
       </div>
     </section>
 
@@ -77,7 +92,11 @@
           <!-- Cards -->
           <li class="card">
             <div class="card__heading">
-              <img class="card__icon" src="../assets/img/icon-lencil.svg" alt="">
+              <div class="card__media">
+                <div class="card__image">
+                  <img class="card__icon" src="../assets/img/icon-lencil.svg" alt="">
+                </div>
+              </div>
               <h3 class="card__title">250</h3>
               <p class="card__subtitle">UI Elements</p>
             </div>
@@ -85,15 +104,23 @@
           </li>
 
           <li class="card">
-              <img class="card__icon" src="../assets/img/icon-lightning.svg" alt="">
-              <h3 class="card__title">Ultra</h3>
-              <p class="card__subtitle">Modern design</p>
-              <p class="card__contents">Sed risus feugiat fusce eu sit conubia venenatis aliquet nisl cras eu adipiscing ac cras at sem cras per senectus eu parturient quam.</p>
+            <div class="card__media">
+              <div class="card__image">
+                <img class="card__icon" src="../assets/img/icon-lightning.svg" alt="">
+              </div>
+            </div>
+            <h3 class="card__title">Ultra</h3>
+            <p class="card__subtitle">Modern design</p>
+            <p class="card__contents">Sed risus feugiat fusce eu sit conubia venenatis aliquet nisl cras eu adipiscing ac cras at sem cras per senectus eu parturient quam.</p>
           </li>
 
           <li class="card">
             <div class="card__heading">
-              <img class="card__icon" src="../assets/img/icon-heart.svg" alt="">
+              <div class="card__media">
+                <div class="card__image">
+                  <img class="card__icon" src="../assets/img/icon-heart.svg" alt="">
+                </div>
+              </div>
               <h3 class="card__title">Free</h3>
               <p class="card__subtitle">Forever and ever</p>
             </div>
@@ -104,7 +131,7 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section section--withBackground">
       <div class="section__container">
         hello
       </div>
@@ -115,7 +142,7 @@
       <div class="section__container">
         <h2 class="section__title">Manage your subscriptions</h2>
 
-        <ul class="section__flexlist">
+        <ul class="section__flexlist section__flexlist--tiles">
           <!-- First tile -->
           <li class="tile">
             <div class="tile__heading">
@@ -176,6 +203,56 @@
 
         </ul>
 
+      </div>
+    </section>
+
+  <!-- Slider section -->
+    <section class="section section--withBackground">
+      <div class="section__container">
+
+        <div class="slider">
+          <div class="portrait portrait--big">
+            <img class="portrait__image" src="../assets\img\image-person.png">
+          </div>
+          <h2 class="section__title">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur ab quis inventore facere quaerat doloremque eius, adipisci unde!"</h2>
+          <p class="slider__name">Teehan + Lax </p>
+
+          <ul class="slider__pictures">
+            <li class="slider__picture">
+              <div class="portrait">
+                <img class="portrait__image" src="../assets\img\image-person.png">
+              </div>
+            </li>
+            <li class="slider__picture">
+              <div class="portrait">
+                <img class="portrait__image" src="../assets\img\image-person.png">
+              </div>
+            </li>
+            <li class="slider__picture">
+              <div class="portrait portrait--selected">
+                <img class="portrait__image" src="../assets\img\image-person.png">
+              </div>
+            </li>
+            <li class="slider__picture">
+              <div class="portrait">
+                <img class="portrait__image" src="../assets\img\image-person.png">
+              </div>
+            </li>
+            <li class="slider__picture">
+              <div class="portrait">
+                <img class="portrait__image" src="../assets\img\image-person.png">
+              </div>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section">
+      <div class="section__container">
+        <h2 class="section__title">Make your mark on the product industry</h2>
       </div>
     </section>
 

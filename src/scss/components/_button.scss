@@ -1,12 +1,17 @@
 .button {
   padding: 22px 70px;
+  font-size: .75rem;
   color: $c-purple-button;
   border: 2px solid $c-purple-button;
   border-radius: 40px;
 
   &--transparent {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 17px 35px;
     color: $c-white;
-    border-color: $c-white;
+    border: 1px solid $c-white;
   }
 
   &--purple {
