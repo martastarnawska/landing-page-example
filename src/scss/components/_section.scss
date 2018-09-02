@@ -46,6 +46,14 @@
     }
   }
 
+  &--chessboard {
+    padding: 0 0;
+
+    .section__container {
+      padding: 0 0;
+    }
+  }
+
   @media #{$screen-md} {
     padding: $spacing 0;
 
@@ -63,6 +71,10 @@
 
     &--withBackground {
       padding: 0 0;
+    }
+
+    &--chessboard {
+      padding-top: 0;
     }
   }
 

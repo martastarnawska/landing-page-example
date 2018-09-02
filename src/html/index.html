@@ -18,7 +18,7 @@
       <nav class="navigation">
         <div class="navigation__container">
           <a class="" href="logo">
-            <img src="../assets\img\logo.svg">
+            <img src="../assets/img/logo.svg">
           </a>
 
           <input type="checkbox" id="burger"class="navigation__input"/>
@@ -32,7 +32,7 @@
             <li class="navigation__item"><a href="#" class="navigation__link">Support</a></li>
             <li class="navigation__item"><a href="#" class="navigation__link">Log in</a></li>
             <li class="portrait">
-              <img class="portrait__image" src="../assets\img\image-person.png">
+              <img class="portrait__image" src="../assets/img/image-person.png">
             </li>
 
             <!-- tu dorzucę wszystkie elementy nav lupę itd -->
@@ -45,7 +45,7 @@
       <h2 class="jumbo__subtitle">Craft your journey, absolutely free, with Land.io UI kit.</h2>
 
       <button class="button button--transparent">
-        <img class="button__icon" src="../assets\img\icon-sketch.svg">
+        <img class="button__icon" src="../assets/img/icon-sketch.svg">
         FREE FOR SKETCH
       </button>
 
@@ -78,7 +78,7 @@
           </div>
 
           <div class="connector__imageContainer">
-            <img class="connector__image" src="../assets\img\image-tablet-medium.png">
+            <img class="connector__image" src="../assets/img/image-tablet-medium.png">
           </div>
         </article>
 
@@ -210,37 +210,44 @@
     <section class="section section--withBackground">
       <div class="section__container">
 
-        <div class="slider">
-          <div class="portrait portrait--big">
-            <img class="portrait__image" src="../assets\img\image-person.png">
+        <div class="slider js-slider">
+          <img class="js-slider-slide" src="../assets/img/image-person.png">
+          <img class="js-slider-slide" src="../assets/img/image-person.png">
+          <img class="js-slider-slide" src="../assets/img/image-person.png">
+          <img class="js-slider-slide" src="../assets/img/image-mountains.png">
+          <img class="js-slider-slide" src="../assets/img/image-tablet.png">
+
+
+          <!-- <div class="portrait portrait--big">
+            <img class="portrait__image" src="../assets/img/image-person.png">
           </div>
           <h2 class="section__title">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur ab quis inventore facere quaerat doloremque eius, adipisci unde!"</h2>
-          <p class="slider__name">Teehan + Lax </p>
+          <p class="slider__name">Teehan + Lax </p> -->
 
           <ul class="slider__pictures">
-            <li class="slider__picture">
+            <li class="slider__picture js-slider-dot">
               <div class="portrait">
-                <img class="portrait__image" src="../assets\img\image-person.png">
+                <img class="portrait__image" src="../assets/img/image-person.png">
               </div>
             </li>
-            <li class="slider__picture">
+            <li class="slider__picture js-slider-dot">
               <div class="portrait">
-                <img class="portrait__image" src="../assets\img\image-person.png">
+                <img class="portrait__image" src="../assets/img/image-person.png">
               </div>
             </li>
-            <li class="slider__picture">
+            <li class="slider__picture js-slider-dot">
               <div class="portrait portrait--selected">
-                <img class="portrait__image" src="../assets\img\image-person.png">
+                <img class="portrait__image" src="../assets/img/image-person.png">
               </div>
             </li>
-            <li class="slider__picture">
+            <li class="slider__picture js-slider-dot">
               <div class="portrait">
-                <img class="portrait__image" src="../assets\img\image-person.png">
+                <img class="portrait__image" src="../assets/img/image-person.png">
               </div>
             </li>
-            <li class="slider__picture">
+            <li class="slider__picture js-slider-dot">
               <div class="portrait">
-                <img class="portrait__image" src="../assets\img\image-person.png">
+                <img class="portrait__image" src="../assets/img/image-person.png">
               </div>
             </li>
           </ul>
@@ -249,10 +256,72 @@
       </div>
     </section>
 
-
+  <!-- Text - articles -->
     <section class="section">
       <div class="section__container">
         <h2 class="section__title">Make your mark on the product industry</h2>
+        <div class="text">
+          <article class="text__article">
+            <p class="text__paragraph">A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse ad rhoncus cursus ut parturient viverra elit aliquam ultrices est sem. Tellus nam ad fermentum ac enim est duis facilisis congue a lacus adipiscing consequat risus consectetur scelerisque integer suspendisse a mus integer elit massa ut.</p>
+          </article>
+          <article class="text__article">
+            <p class="text__paragraph">A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse ad rhoncus cursus ut parturient viverra elit aliquam ultrices est sem. Tellus nam ad fermentum ac enim est duis facilisis congue a lacus adipiscing consequat risus consectetur scelerisque integer suspendisse a mus integer elit massa ut.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section section--chessboard">
+      <div class="section__container">
+        <div class="article">
+
+          <div class="article__ilustration">
+            <img class="article__image" src="../assets/img/image-person.jpg">
+          </div>
+
+          <article class="article__refernece">
+            <button class="button button--small">Featured article</button>
+            <p class="article__title">Design studio with product designer Peter Finlan
+              <img class="article__icon article__icon--arrow" src="../assets/img/icon-arrow.svg">
+            </p>
+            <div class="article__info">
+              <p class="article__subject">
+                <img class="article__icon" src="../assets/img/icon-tag.svg">
+                DESIGN STUDIO
+              </p>
+              <p class="article__time">
+                <img class="article__icon"src="../assets/img/icon-time.svg">
+                1 HOUR AGO
+              </p>
+            </div>
+          </article>
+
+        </div>
+
+
+        <div class="article article--reverse">
+          <div class="article__ilustration">
+            <img class="article__image" src="../assets/img/image-mountains.jpg">
+          </div>
+          <article class="article__refernece">
+            <p class="article__title">How bold, emotive imagery can connect with your audience
+              <img class="article__icon article__icon--arrow" src="../assets/img/icon-arrow.svg">
+            </p>
+            <div class="article__info">
+              <p class="article__subject">
+                <img class="article__icon" src="../assets/img/icon-tag.svg">
+                DESIGN STUDIO
+              </p>
+              <p class="article__time">
+                <img class="article__icon"src="../assets/img/icon-time.svg">
+                1 HOUR AGO
+              </p>
+            </div>
+          </article>
+
+        </div>
+
       </div>
     </section>
 

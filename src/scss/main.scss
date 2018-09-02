@@ -13,3 +13,27 @@
 @import './components/tile';
 @import './components/button';
 @import './components/slider';
+@import './components/text';
+@import './components/article';
+
+.js-slider-slide {
+  display: none;
+
+  &--active {
+    display: block;
+  }
+}
+
+.js-slider-dot {
+  border: 3px solid pink;
+  border-radius: 100%;
+
+  & + & {
+    margin-left: 15px;
+  }
+
+  &--active {
+    border: 3px solid blue;
+    transform: scale(1.2);
+  }
+}
