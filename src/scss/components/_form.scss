@@ -1,0 +1,68 @@
+.form {
+  $c-input:  transparentize($c-text-gray, .5);
+
+  padding: 0 13px;
+
+  &__heading {
+    margin-bottom: 30px;
+    padding: 0 20px;
+    line-height: 2.2em;
+  }
+
+  &__sheet {
+    display: flex;
+    flex-direction: column;
+    font-family: $font-roboto;
+  }
+
+  &__input {
+    height: 55px;
+    margin: 10px 0;
+    padding-left: 20px;
+    color: $c-input;
+    border: 1px solid $c-platinum;
+    border-radius: 5px;
+  }
+
+  &__check {
+    padding-top: 40px;
+    font-size: 15px;
+    color: $c-input;
+  }
+
+  &__button {
+    margin-top: 20px;
+  }
+
+  @media #{$screen-md} {
+    &__sheet {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    &__input {
+      flex-basis: 40%;
+      margin: 10px 15px;
+    }
+
+    &__button {
+      margin: 10px 35px;
+    }
+
+    &__check {
+      margin-left: 50px;
+      padding: 15px 15px;
+      text-align: left;
+    }
+  }
+
+  @media #{$screen-lg} {
+    &__sheet {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    &__button {
+      max-width: 260px;
+    }
+  }
+}

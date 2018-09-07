@@ -23,7 +23,7 @@
     text-align: center;
   }
 
-  &--dark {
+  &--gray {
     background-color: $c-white-smoke;
   }
 
@@ -52,6 +52,11 @@
     .section__container {
       padding: 0 0;
     }
+  }
+
+  &--dark {
+    color: $c-white;
+    background-color: $c-gray;
   }
 
   @media #{$screen-md} {

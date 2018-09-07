@@ -9,6 +9,7 @@
 
   &__imageContainer {
     padding-top: 30px;
+    overflow: hidden;
   }
 
   @media #{$screen-md} {

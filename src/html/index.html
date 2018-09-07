@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" >
   <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
   <link rel="stylesheet" href="style.css" >
@@ -17,7 +18,7 @@
 
       <nav class="navigation">
         <div class="navigation__container">
-          <a class="" href="logo">
+          <a class="navigation__logo" href="logo">
             <img src="../assets/img/logo.svg">
           </a>
 
@@ -68,7 +69,7 @@
 
   <main>
 
-    <section class="section section--dark section--noPadding">
+    <section class="section section--gray section--noPadding">
       <div class="section__container">
 
         <article class="connector">
@@ -133,12 +134,12 @@
 
     <section class="section section--withBackground">
       <div class="section__container">
-        hello
+
       </div>
     </section>
 
 <!-- Tiles section -->
-    <section class="section section--dark">
+    <section class="section section--gray">
       <div class="section__container">
         <h2 class="section__title">Manage your subscriptions</h2>
 
@@ -274,12 +275,11 @@
 
     <section class="section section--chessboard">
       <div class="section__container">
-        <div class="article">
 
+        <div class="article">
           <div class="article__ilustration">
             <img class="article__image" src="../assets/img/image-person.jpg">
           </div>
-
           <article class="article__refernece">
             <button class="button button--small">Featured article</button>
             <p class="article__title">Design studio with product designer Peter Finlan
@@ -296,7 +296,6 @@
               </p>
             </div>
           </article>
-
         </div>
 
 
@@ -319,7 +318,31 @@
               </p>
             </div>
           </article>
+        </div>
 
+      </div>
+    </section>
+
+    <section class="section section--gray">
+      <div class="section__container">
+
+        <div class="form">
+          <div class="form__heading">
+            <h2 class="section__title">Sign up to receive free updates as soon as they hit!</h2>
+          </div>
+
+          <form class="form__sheet">
+            <input class="form__input" type="text" value="Your name">
+            <input class="form__input" type="text" value="Email adress">
+            <input class="form__input" type="text" value="Enter a password">
+
+            <input class="form__button button button--purple button--submit" type="submit" value="SIGN UP FOR FREE!">
+          </form>
+
+          <div class="form__check">
+            <input class="form__checkbox" type="checkbox" id="accept">
+            <label class="form__checkLabel" for="accept">I agree to Land.io’s <a href="#">terms of service</a></label>
+          </div>
         </div>
 
       </div>
