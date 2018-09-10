@@ -1,0 +1,92 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  font-family: $font-roboto;
+  font-size: 15px;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    padding: 0 100px;
+    line-height: 2em;
+  }
+
+  &__item {
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+
+  &__link {
+    padding: 5px 5px;
+    transition: border-bottom 1s;
+
+    &:hover {
+      border-bottom: 2px solid transparentize($c-white-smoke, .5);
+    }
+  }
+
+  &__signature {
+    padding-top: 50px;
+    font-size: 12px;
+    line-height: 1.4em;
+  }
+
+  @media #{$screen-md} {
+    align-items: center;
+    justify-content: center;
+    padding: 0 30px;
+
+    &__logo {
+      padding-top: 10px;
+    }
+
+    &__icon {
+      width: 25px;
+      height: 25px;
+    }
+
+    &__signature {
+      padding: 0 10px;
+    }
+
+    &__list {
+      flex-direction: row;
+      justify-content: center;
+      order: -1;
+      width: 100%;
+      margin-bottom: 30px;
+      padding: 0 0;
+    }
+
+    &__item {
+      margin: 0 0;
+      padding: 0 15px;
+    }
+  }
+
+  @media #{$screen-lg} {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-top: 40px;
+
+    &__icon {
+      width: 40px;
+      height: 40px;
+    }
+
+    &__list {
+      order: 7;
+      width: auto;
+      margin: 0 0;
+    }
+
+    &__logo {
+      padding: 0 0;
+    }
+
+    &__signature {
+      margin-right: 120px;
+      text-align: left;
+    }
+  }
+}
