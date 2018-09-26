@@ -27,15 +27,31 @@
 }
 
 .js-slider-dot {
-  border: 3px solid pink;
-  border-radius: 100%;
-
-  & + & {
-    margin-left: 15px;
+  .portrait {
+    opacity: .5;
   }
 
   &--active {
-    border: 3px solid blue;
     transform: scale(1.2);
+
+    .portrait {
+      opacity: 1;
+    }
+  }
+}
+
+.js-slider-portrait {
+  display: none;
+
+  &--active {
+    display: block;
+  }
+}
+
+.js-slider-quote {
+  display: none;
+
+  &--active {
+    display: block;
   }
 }
