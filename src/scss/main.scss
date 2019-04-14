@@ -13,29 +13,30 @@
 @import './components/tile';
 @import './components/button';
 @import './components/slider';
+@import './components/slider-interactive';
 @import './components/text';
 @import './components/article';
 @import './components/form';
 @import './components/footer';
 
-.js-slider-slide {
-  display: none;
-
-  &--active {
-    display: block;
-  }
-}
-
-.js-slider-dot {
-  border: 3px solid pink;
-  border-radius: 100%;
-
-  & + & {
-    margin-left: 15px;
-  }
-
-  &--active {
-    border: 3px solid blue;
-    transform: scale(1.2);
-  }
-}
+// .js-slider-slide {
+//   display: none;
+//
+//   &--active {
+//     display: block;
+//   }
+// }
+//
+// .js-slider-dot {
+//   border: 3px solid pink;
+//   border-radius: 100%;
+//
+//   & + & {
+//     margin-left: 15px;
+//   }
+//
+//   &--active {
+//     border: 3px solid blue;
+//     transform: scale(1.2);
+//   }
+// }
