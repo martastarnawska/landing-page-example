@@ -66,6 +66,8 @@
     right: 0;
     left: 0;
     padding: 15px 0;
+    background: linear-gradient(to right, $c-purple-background, $c-blue-background);
+    opacity: .85;
 
     &__burger {
       display: none;
