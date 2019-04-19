@@ -19,40 +19,40 @@
 @import './components/form';
 @import './components/footer';
 
-.js-slider-slide {
-  display: none;
+// .js-slider-slide {
+//   display: none;
 
-  &--active {
-    display: block;
-  }
-}
+//   &--active {
+//     display: block;
+//   }
+// }
 
-.js-slider-dot {
-  .portrait {
-    opacity: .5;
-  }
+// .js-slider-dot {
+//   .portrait {
+//     opacity: .5;
+//   }
 
-  &--active {
-    transform: scale(1.2);
+//   &--active {
+//     transform: scale(1.2);
 
-    .portrait {
-      opacity: 1;
-    }
-  }
-}
+//     .portrait {
+//       opacity: 1;
+//     }
+//   }
+// }
 
-.js-slider-portrait {
-  display: none;
+// .js-slider-portrait {
+//   display: none;
 
-  &--active {
-    display: block;
-  }
-}
+//   &--active {
+//     display: block;
+//   }
+// }
 
-.js-slider-quote {
-  display: none;
+// .js-slider-quote {
+//   display: none;
 
-  &--active {
-    display: block;
-  }
-}
+//   &--active {
+//     display: block;
+//   }
+// }
