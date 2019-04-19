@@ -5,6 +5,23 @@
   color: $c-purple-button;
   border: 2px solid $c-purple-button;
   border-radius: 40px;
+  transition: all .5s ease;
+
+  &:hover,
+  &:active {
+    color: $c-white;
+    background-color: $c-purple-button;
+  }
+
+  &--purple {
+    color: $c-white;
+    background-color: $c-purple-button;
+
+    &:hover,
+    &:active {
+      background-color: $c-purple-dark;
+    }
+  }
 
   &--transparent {
     display: flex;
@@ -13,12 +30,11 @@
     padding: 17px 35px;
     color: $c-white;
     border: 1px solid $c-white;
-  }
 
-  &--purple {
-    color: $c-white;
-    background-color: $c-purple-button;
-    border: none;
+    &:hover,
+    &:active {
+      background-color: rgba(255, 255, 255, .3);
+    }
   }
 
   &--submit {
@@ -26,8 +42,6 @@
   }
 
   &__icon {
-    // position: absolute;
-    // top: 10px;
     padding-right: 15px;
   }
 

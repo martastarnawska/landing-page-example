@@ -1,6 +1,7 @@
 $c-gray: rgba(49, 47, 56, 1);
 $c-purple: rgba(145, 131, 199, 1);
 $c-purple-button: rgba(108, 89, 180, .75);
+$c-purple-dark: darken($c-purple-button, 15%);
 $c-white-smoke: rgba(244, 245, 247, 1);
 $c-text-gray: rgba(66, 71, 83, 1);
 $c-white: rgba(255, 255, 255, 1);
