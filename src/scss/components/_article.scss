@@ -7,6 +7,13 @@
   &__ilustration {
     width: 100%;
     height: 220px;
+    overflow: hidden;
+  }
+
+  &__image {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
   }
 
   &__refernece {
@@ -30,13 +37,28 @@
     display: flex;
     font-size: .8rem;
     color: transparentize($c-white, .6);
-    // & + & {
-    //   padding-left: 15px;
-    // }
   }
 
   &__time {
     padding-left: 10px;
+  }
+
+  @media only screen and (max-width: 786px) {
+    &__image {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  @media only screen and (max-width: 780px) and (min-width: 450px) {
+    &__ilustration {
+      height: 300px;
+    }
+
+    &__refernece {
+      padding: 70px 50px;
+    }
   }
 
   @media #{$screen-md} {
@@ -47,12 +69,6 @@
       width: 40%;
       height: auto;
       overflow: hidden;
-    }
-
-    &__image {
-      min-width: 100%;
-      min-height: 100%;
-      object-fit: cover;
     }
 
     &__refernece {

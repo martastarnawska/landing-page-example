@@ -19,24 +19,40 @@
 @import './components/form';
 @import './components/footer';
 
-// .js-slider-slide {
-//   display: none;
-//
-//   &--active {
-//     display: block;
-//   }
-// }
-//
-// .js-slider-dot {
-//   border: 3px solid pink;
-//   border-radius: 100%;
-//
-//   & + & {
-//     margin-left: 15px;
-//   }
-//
-//   &--active {
-//     border: 3px solid blue;
-//     transform: scale(1.2);
-//   }
-// }
+.js-slider-slide {
+  display: none;
+
+  &--active {
+    display: block;
+  }
+}
+
+.js-slider-dot {
+  .portrait {
+    opacity: .5;
+  }
+
+  &--active {
+    transform: scale(1.2);
+
+    .portrait {
+      opacity: 1;
+    }
+  }
+}
+
+.js-slider-portrait {
+  display: none;
+
+  &--active {
+    display: block;
+  }
+}
+
+.js-slider-quote {
+  display: none;
+
+  &--active {
+    display: block;
+  }
+}
