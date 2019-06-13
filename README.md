@@ -6,4 +6,4 @@ Technologies used: HTML, SCSS, JavaScript.
 
 To build the project locally:
 1) clone the repository: https://github.com/martastarnawska/landing-page-example
-2) run `npm install` and then `npm run start`
+2) run `npm install` and then `npm run build`
